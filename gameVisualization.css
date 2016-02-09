@@ -1,0 +1,94 @@
+body
+{
+	background:#E6F1FF;
+	margin:.5em;
+}
+
+#main_table
+{
+	margin:0;
+	width:100%;
+	padding:0;
+}
+
+#main_table > tbody > tr > td
+{
+	text-align:center;
+	margin:auto;
+	border: 2px solid blue;
+	vertical-align:top;
+	background:#CCC;
+	padding:0;
+}
+
+#detailLabel
+{
+    font-size: 24pt;
+}
+
+#detailTable
+{
+	margin:0;
+	width:100%;
+	padding:0;
+}
+
+#detailTable > tbody > tr > td
+{
+	text-align:left;
+	margin:auto;
+	border: 2px solid blue;
+	vertical-align:top;
+	background:#CCC;
+	padding:0;
+}
+
+#MainView, #BarChart, #ItemBarChart, #MainViewBack, #MainViewImage
+{
+	border:5px solid black;
+	border-radius:5px;
+	background:#FFF;
+	margin:.25em;
+}
+
+#MainView{
+    background-color: rgba(0,0,0,0);
+    pointer-events: none;
+}
+
+#MainViewBack{
+    opacity:.5;
+}
+
+#MainViewImage{
+    background-image:url("map1.jpg");
+    background-size:850px 600px;
+    background-repeat:no-repeat;
+    background-position:center right;
+}
+
+
+#TimeLine
+{
+	border:5px solid black;
+	border-radius:5px;
+	background:#FFF;
+	margin:.25em;
+}
+
+.brush
+{
+    fill-opacity: .2;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.movement
+{
+    opacity: 1;
+}
+
+.deadMovement
+{
+    opacity: 0;
+}

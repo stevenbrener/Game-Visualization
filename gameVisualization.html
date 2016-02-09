@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="d3.v3.js"></script>
+    <link href="gameVisualization.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <table id="main_table">
+      <tr>
+      <td width="20%">
+        <h2> Options </h2>
+        Deaths <br>
+        <button id="deathSwitchT">Player</button>
+        <button id="deathSwitchV">Show</button>
+        <br>
+        Kills <br>
+        <button id="killSwitchT">Player</button>
+        <button id="killSwitchV">Show</button><br>
+        Kill Lines <br>
+        <button id="killLineSwitchV">Show</button><br>
+        Paths <br>
+        <button id="pathSwitchV">Show</button><br>
+        Items <br>
+        <button id="itemSwitchT">Location</button>
+        <button id="itemSwitchV">Show</button><br>
+        Games<br>
+        <select id="gameSelect">
+        </select>
+        <button id="addGame">Add</button>
+        <button id="removeGame">Remove</button>
+        <button id="selectGame">Select</button><br>
+        <button id="addAllGame">Add All</button>
+        <br><br><hr color="blue">
+        <h2> Details</h2>
+        <table id="detailTable">
+            <tr>
+                <td>
+                    Type: <span id="typeDetail"></span>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    Position: <span id="posDetail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Time: <span id="timeDetail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="detail2"></span> <span id="itemDetail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="detail3"></span> <span id="deadDetail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="detail4"></span> <span id="killerDetail"></span>
+                </td>
+            </tr>
+        </table>
+      </td>
+      <td width="50%">
+        <div style="position:relative">
+            <svg id="MainViewImage" width="700" height="600" style="position:absolute; left:0%; top:0%" >
+            </svg>
+            <svg id="MainViewBack" width ="700" height="600" style="position:absolute; left:0%; top:0%">
+            </svg>
+            <svg id="MainView" width="700" height="600" style="position:absolute; left:0%; top:0%" >
+            </svg>
+        </div>
+      </td>
+      <td width="30%">
+        <svg id="BarChart" width="400" height="300">
+        </svg>
+        <svg id="ItemBarChart" width="400" height="300">
+        </svg>
+      </td>
+      </tr>
+      <tr>
+        <td colspan = "3">
+            <button id="timeLineSwitchT">Deaths</button>
+            <svg id="TimeLine" width="900" height="75">
+            </svg>
+        </td>
+      </tr>
+    </table>
+    
+    <script src="gameVisualization.js"></script>
+  </body>
+</html>
